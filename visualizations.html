@@ -1,53 +1,54 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>CS4460 P1</title>
-</head>
-<body>
-	<h1>Mitchell Veazey | CS4460 Info Vis | Spring 2019</h1>
-</body>
+	<head>
+		<title>Basic HTML Charts</title>
+	</head>
+	<body>
+		<h1>Mitch Veazey | Spring 2019</h1>
+
+		<h2> The focus of this assignment is to draw simple SVG elements on a webpage and build simple visualizations from them. </h2>
+
+		<p> These visualizations should be created using HTML, CSS, and SVG.<br>The webpage will have four charts: a single bar, one bar chart, one line chart, and one pie chart.<br>Each chart should be drawn in an svg element of size 400 x 400 pixels.<br>The layout is not important -- stack these vertically on top of each other.</p>
+
+		<h2>One red bar</h2>
+		<p>Create a single bar with the height of 250. The color of the bar should be red.</p>
+		<svg width='400' height='400'>
+	    	<rect width="400" height="400" style="fill:rgb(255,255,255); stroke-width:1; stroke:rgb(0,0,0)" > </rect>
+	    	<rect fill='red' x = '178' y = '150' width='64' height='250'></rect>
+		</svg>
+
+		<h2>Green bar chart</h2>
+		<p>Draw a bar chart. Your bar chart should take all 400 pixels in the SVG. The individual bars should have the following height, in order: 150, 225, 225, 300, 300, 225, 225, 150.</p> 
+		<svg width="400" height="400" >
+	    	<rect width="400" height="400" style="fill:rgb(255,255,255); stroke-width:1; stroke:rgb(0,0,0)" > </rect>
+			<rect class="bar" fill='green' x="0" width="50" y="250" height="150" stroke-width = "2" stroke = "black" ></rect>
+			<rect class="bar" fill='green' x="50" width="50" y="175" height="225" stroke-width = "2" stroke = "black" ></rect>
+			<rect class="bar" fill='green' x="100" width="50" y="175" height="225" stroke-width = "2" stroke = "black" ></rect>
+			<rect class="bar" fill='green' x="150" width="50" y='100' height="300" stroke-width = "2" stroke = "black" ></rect>
+			<rect class="bar" fill='green' x="200" width="50" y='100' height="300" stroke-width = "2" stroke = "black" ></rect>
+			<rect class="bar" fill='green' x="250" width="50" y="175" height="225" stroke-width = "2" stroke = "black" ></rect>
+			<rect class="bar" fill='green' x="300" width="50" y="175" height="225" stroke-width = "2" stroke = "black" ></rect>
+			<rect class="bar" fill='green' x="350" width="50" y="250" height="150" stroke-width = "2" stroke = "black" ></rect>
+		</svg>
+
+		<h2>Line chart</h2>
+		<p>Draw a line chart composed of the SVG line element. The heights of the vertices in the polyline should be the same as the heights of the individual bars for your bar chart.</p>
+		<svg width="400" height="400">
+	    	<rect width="400" height="400" style="fill:rgb(255,255,255); stroke-width:1; stroke:rgb(0,0,0)" > </rect>
+			  <polyline points="0,250    50,175 100,175   150,100 200,100   250,175 300,175   350,250 " fill="none" stroke="black" stroke-width = "4" />
+		</svg>
+
+		<h2> Pie chart </h2>
+		<p>Draw a pie chart with two wedges. The first wedge will span 90 degrees and will be green, and the second wedge will span the remaining 270 degrees, and will be yellow.</p>
+		<svg width="400" height="400" >
+	    	<rect width="400" height="400" style="fill:rgb(255,255,255); stroke-width:1; stroke:rgb(0,0,0)" > </rect>
+		  	<g x="0" transform = "rotate(180, 200, 200) scale(0.98, 0.98)"> 
+			  	<circle cx="200" cy="200" r="200" stroke="black" stroke-width="2"
+			  	fill = "yellow" />
+			  	<path d="M0 199 A 200 200, 0, 0, 0, 199 399 L 199 199 Z"
+			  	stroke="black" stroke-width="2" fill="green" />
+			 </g>
+	</svg>
+
+	</body>
 </html>
-
-<svg width='400' height='400'>
-    <rect fill='red' x = '178' y = '150' width='64' height='250'></rect>
-</svg>
-
-
-<svg width="400" height="400">
-	<rect class="bar" fill='green' x="0" width="50" y="250" height="150" stroke-width = "2" stroke = "black" ></rect>
-	<rect class="bar" fill='green' x="50" width="50" y="175" height="225" stroke-width = "2" stroke = "black" ></rect>
-	<rect class="bar" fill='green' x="100" width="50" y="175" height="225" stroke-width = "2" stroke = "black" ></rect>
-	<rect class="bar" fill='green' x="150" width="50" y='100' height="300" stroke-width = "2" stroke = "black" ></rect>
-	<rect class="bar" fill='green' x="200" width="50" y='100' height="300" stroke-width = "2" stroke = "black" ></rect>
-	<rect class="bar" fill='green' x="250" width="50" y="175" height="225" stroke-width = "2" stroke = "black" ></rect>
-	<rect class="bar" fill='green' x="300" width="50" y="175" height="225" stroke-width = "2" stroke = "black" ></rect>
-	<rect class="bar" fill='green' x="350" width="50" y="250" height="150" stroke-width = "2" stroke = "black" ></rect>
-</svg>
-
-
-<svg width="400" height="400">
-  <polyline points="0,250    50,175 100,175   150,100 200,100   250,175 300,175   350,250 " fill="none" stroke="black" stroke-width = "4" />
-</svg>
-
-<svg width="400" height="400" >
-  	<g transform = "rotate(180, 200, 200) scale(0.98, 0.98)"> 
-	  	<circle cx="200" cy="200" r="200" stroke="black" stroke-width="2"
-	  	fill = "yellow" />
-	  	<path d="M0 199 A 200 200, 0, 0, 0, 199 399 L 199 199 Z"
-	  	stroke="black" stroke-width="2" fill="green" />
-	 </g>
-</svg>
-
-<!-- M: move to 200, 0.
-
-A: draws an arc
-circle x-radius
-circle y-radius
-rotation of the arc
-large-arc flag
-sweep-flag
-end at x
-end at y
-
-L: draw a line from current spot to ___ ___.
-Z: close path. -->
