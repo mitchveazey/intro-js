@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Letter Frequency</title>
+		<!-- Always include D3 first. -->
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+		<!-- Include main.js, which is where all our code lives -->
+		<script src="main.js"></script>
+		<!-- Include any styles we want to add to our page -->
+		<link rel="stylesheet" href="styles.css">
+	</head>
+
+	<body>
+		<h1>Letter Frequency</h1>
+
+	    <div id="graph">
+	    </div>
+
+<!-- 		<div>
+			<input type="button" value="Reset Filter" onClick="window.location.reload()">
+		</div> -->
+
+		<p></p>
+			<div>
+				Cutoff: <input type="text" id="myText" value="" onchange="changeField()">
+			</div>
+	    <p></p>
+
+
+		</div>
+		    <select id="list" onchange="getSelectValue();">
+	            <option value="red">Red</option>
+	            <option value="green">Green</option>
+	            <option value="yellow">Yellow</option>
+	            <option value="black">Black</option>
+	        </select>
+		</div>
+
+	</body>
+
+</html>
