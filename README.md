@@ -11,5 +11,5 @@ The focus of this assignment is to create two bar charts on the same web page th
 ##### letter-frequency-chart :
 The focus of this assignment is to create a simple filtering mechanism for an interactive visualization.
 
-##### sat-chart
+##### sat-chart :
 The focus of this assignment is to build an interactive visualization that utilizes multiple coordinated views via brushing and linking.
