@@ -13,14 +13,23 @@
 	</head>
 
 	<body>
+		<h3>Mitch Veazey | Spring 2019</h3>
 		<h1>Letter Frequency</h1>
+
+		<h2>The focus of this assignment is to create a simple filtering mechanism for an interactive visualization.</h2>
+
+		<p>Note that the design of the filtering mechanism is not part of this assignment.<br>This should just focus on the filtering and animation functionality.</p>
+
+		<h3>Features and functionality:</h3>
+
+		<p>Read data from the provided CSV file (provided in the .zip).<br>Using D3, draw a bar chart for the provided data.<br>Add a drop-down filtering mechanism on the page to allow the user to select a color for the filter (such as HTML Select).<br>Give a choice of at least 3 colors.<br>Add a text-box to enter a numerical value for the cutoff.<br>Add a Filter button on the page (explained below).<br>Animate the filtering behavior, utilizing both duration and delay methods provided by D3 (as in the sample code).<br>The bars that should be filtered out should be hidden (not visible).<br>Add a “Reset Filter” button which clears all filters and allows the user to start over.<br></p>
+
+		<h3>When the user clicks on the Filter button, your code should filter as follows:</h3>
+
+		<p>The selected color from the dropdown is used to color the bars that fall within the filter.<br>There should be at least 3 choices.<br>Letters whose frequency are greater than or equal to the value entered in the text box turn the selected color.<br>All other bars are hidden.<br>Clicking “Reset Filter” should reset the filters and let the user start over (all bars should be blue again, and shown)<br><br>Example: If the user selects “Red” in the drop down menu and types “0.01” in the text field, your visualization should show all the bars that are greater than or equal to 0.01 in Red, and hide all the other bars.<br>If the user clicks “Reset Filter”, all bars return to blue and are shown again, and the user can start over with another filter.</p>
 
 	    <div id="graph">
 	    </div>
-
-<!-- 		<div>
-			<input type="button" value="Reset Filter" onClick="window.location.reload()">
-		</div> -->
 
 		<p></p>
 			<div>

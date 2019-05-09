@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/> 
+		<title>Brushing and Linking</title>
+		<link href="style.css" type="text/css" rel="stylesheet" />
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>	 
+   	</head>
+   	<body>
+   		<h1>Mitch Veazey | Spring 2019</h1>
+   		<h1>Brushing and Linking</h1>
+
+   		<h2>The focus of this assignment is to build a visualization that utilizes multiple coordinated views using brushing and linking.</h2>
+
+   		<p>Given two scatterplots that show different attributes of your data, the task in this assignment is to add interactivity that allows selections in one view to highlight corresponding data points in the other view (i.e., brushing and linking).<br><br></p>
+   		<h3>The dataset:</h3>
+   		<p>The dataset you will use for this assignment consists of SAT scores.<br>For the first scatterplot, SAT mathematics scores (SATM) should be mapped to the x coordinate and the SAT verbal scores should be assigned to y coordinate.<br>For the second scatterplot, the ACT attribute should be mapped to the x coordinate and the GPA attribute should be mapped to the y coordinate.<br>Each scatterplot should be drawn in an svg element of size 400 x 400px.<br></p>
+   		<h3>Features and functionality:</h3>
+   		<p>One scatterplot with SATM and SATV axes<br>The second scatterplot with ACT and GPA axes<br>When users click on a point in either scatterplot, the actual numerical values of the fields for that particular student are displayed in a separate table (details on demand).<br>When users drag the mouse on either scatterplot, a rectangular brush is drawn on that scatterplot, indicating the region of interest.<br>All the points inside that region are considered selected and should be highlighted on the other scatterplot.<br>The rectangular selection should be draggable by clicking and dragging the left mouse button.<br>When users click on a point in either scatterplot, the corresponding point on the other scatterplot is highlighted<br>When switching brushing between visualizations, the previous brush should be cleared. For example, brushing in view 1, then brushing in view 2, the brush in view 1 should be cleared (removed).</p>
+   		<h3>The vis:</h3>
+
+	   	<div id="wrapper">
+			<div id="chart1">
+	    	</div>
+		  	<div id="chart2">
+	        </div>
+		  	<div id="chart3">
+		        <strong>SATM Score:</strong> <span id="satm"></span><br/>
+		        <strong>SATV Score:</strong> <span id="satv"></span><br/>
+		        <strong>ACT Score:</strong> <span id="act"></span><br/>
+		        <strong>GPA:</strong> <span id="gpa"></span><br/> 
+	        </div>
+	   	</div>
+	</body>
+</html>
+
