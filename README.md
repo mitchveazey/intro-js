@@ -1,18 +1,18 @@
 # intro-webdev
 
-## This repo contains various personal projects to practice web development.
+## This repo contains various projects that practice web development using Javascript, CSS, and HTML.
 
 ##### basic-chart-visualizations :
-The focus of this project is to draw simple SVG elements on a webpage and build simple visualizations from them.
+Utilizes basic SVG elements to build simple visualizations on a web page.
 
 ##### coffee-sales-chart :
-The focus of this static visualization is to utilize bar charts.
+Utilizes bar charts to create a static visualization of coffee sale data.
 
 ##### letter-frequency-chart :
-The focus of this interactive visualization is to utilize a simple filtering mechanism.
+Utilizes a simple filtering mechanism to create an interactive visualization of letter frequency.
 
 ##### sat-chart :
-The focus of this interactive visualization is to utilize multiple coordinated views via brushing and linking.
+Utilizes multiple coordinated views with brushing and linking to create an interactive visualization of SAT scores.
 
 ##### female-nobel-lauraetes :
-The focus of this interactive vis is to highlight the female Nobel laureates throughout history and the underrepresentation they have faced.
+Utilizes various strategies to create an interactive visualization of all female Nobel laureates throughout history and their accomplishments.
